@@ -7,7 +7,7 @@ main()async{
   String blue = '\x1B[34m';
   String cyan = '\x1B[36m';
 
-  String Starting_title = '$red your brown bus ticket now> \n $blue**** For the bus ticket booking you have to follow some rules $reset \n       $cyan There have a code in the right side of place name, if you want to select any place then input the place code here, good luck 😊 $reset';
+  String Starting_title = '$red Book your brown bus ticket now> \n $blue**** For the bus ticket booking you have to follow some rules $reset \n       $cyan There have a code in the right side of place name, if you want to select any place then input the place code here, good luck 😊 $reset';
   for (var char in Starting_title.split('')) { stdout.write(char); await Future.delayed(Duration(milliseconds: 10)); }
   
   print(''); // প্রিন্ট শেষে নতুন লাইন
@@ -27,21 +27,17 @@ main()async{
   if(Location_Code == null || !codes.contains(Location_Code) ){
     print('$red You do not give a valid code $reset');
   }else if(Location_Code == 1011){
-    print('$yellow want to Vim Bazar and the ticket price is 10 taka $reset');
+    print('$yellow You want to Vim Bazar ticket and the ticket price is 10 taka $reset');
   }else if(Location_Code == 1012){
-    print('$yellow want to Master Bari and the ticket price is 20 taka $reset');
+    print('$yellow You want to Master Bari ticket and the ticket price is 20 taka $reset');
   }else if(Location_Code == 1013){
-    print('$yellow want to Chowrasta and the ticket price is 40 taka $reset');
+    print('$yellow You want to Chowrasta ticket and the ticket price is 40 taka $reset');
   }else if(Location_Code == 1014){
-    print('$yellow want to Tongi and the ticket price is 80 taka $reset');
+    print('$yellow You want to Tongi ticket and the ticket price is 80 taka $reset');
   }else if(Location_Code == 1015){
-    print('$yellow want to House Building and the ticket price is 90 taka $reset');
+    print('$yellow You want to House Building ticket and the ticket price is 90 taka $reset');
   }else{
     print('We do not understant where are you want to go');
   }
-
-
-
-
 
 }
