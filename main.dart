@@ -9,9 +9,22 @@ void main(){
   print('What is your name');
   String? name = '';
   name = stdin.readLineSync();
-  print('My name is $name');
+  print('My name is $name and');
 
   for (var i = 1; i <=10; i++){
     print('I love you ruhi');
+  }
+
+  print('\n');
+  String day = 'Sat';
+  switch(day){
+    case 'Sat' || 'Sun':
+      print('This is Warking day');
+    case 'Mon' || 'Twe':
+      print('Warking days will be finish soon');
+    case 'Wet' || 'Thu':
+      print('Last 2 days left to finish warking days');
+    case 'Fri':
+      print('This is Friday & also fun day');
   }
 }
